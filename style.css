@@ -1,0 +1,70 @@
+/* Body: sfond i zi dhe qendër */
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Impact', sans-serif;
+}
+
+/* Kalkulator container: sfond i errët me LED glow vetëm jashtë */
+.calculator-container {
+    background: #111;
+    padding: 25px;
+    border-radius: 25px;
+    width: 280px;
+    text-align: center;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000;
+}
+
+/* Titulli */
+.calculator-container h2 {
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+/* Input: si më parë, pa LED glow */
+#display {
+    width: 240px;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background: #000;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+/* Butonat e zakonshëm */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    border-radius: 15px;
+    border: 2px solid #ff0000;
+    background: #111;
+    color: #ff0000;
+    font-weight: bold;
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-3/cur212.cur'), pointer; /* cursor interesant */
+    transition: 0.2s;
+}
+
+/* Hover efekt: ngjyra dhe efekt i vogël */
+button:hover {
+    background: #ff0000;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Clear button (C) */
+.clear {
+    background: #ff5555;
+    color: #000;
+    border: 2px solid #ff0000;
+    grid-column: span 4;
+    font-size: 20px;
+}
